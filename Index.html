@@ -1,76 +1,880 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Main.css">
-    <link rel="stylesheet" href="./Assets/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css">
-    <title>Nikerunnn</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/Main.css" />
+	<link rel="stylesheet" href="./Assets/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css" />
+	<script src="./script.json"></script>
+	<title>Nikerunnn</title>
 </head>
+
 <body>
-    <div id="Base">
-        <div id="header">
-            <div id="nav">
-                <ul id="first-Subnav" class="row">
-                <a href="" class="btn btn--round btn-secondary  btn--xs" title="Đăng ký thành viên">Đăng ký</a>
-                <a href="" class="btn btn--round btn--xs" title="Đăng nhập">Đăng nhập</a>
-                </ul>
-                <div id="second-Subnav" class="sub--row">
-                <div ><img src="./IMG/Pictures/logo.png" alt=""></div>
-                <div class="header-menu">
-                    <ul class="navbar-nav">
-                    <li class="has_dropdown"><a href="">HOME</a></li>
-                    <li class="has_dropdown"><a href="">PHẦN MỀM</a></li>
-                    <li class="has_megamenu"><a href="">GAMES</a></li>
-                    <li class="has_megamenu"><a href="">PHIM HD - BLURAY</a></li>
-                    <li><a href="">DIỄN ĐÀN</a></li>
-                    <li><a href="">FAQS</a></li>
-                    <div class="main-search">
-                        <div class="search-wrap">
-                            <button class="search-wrap__btn" style="position: unset;">
-                            <i class="fal fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                    </div>
-                    </ul>
-                        </div>
-                    </div>
-                </div>
-                <section class="hero-area bgimage">
-                    <div class="hero-content content-above">
-                    <div class="content-wrapper">
-                        <div class="container">
-                            <div class="row">
-                                <div class="content_title">
-                                    <h1>
-                                        <span class="light">LinkHasDie</span>
-                                        <span class="bold">Cộng đồng chia sẻ nguồn giải trí và kiến thức công nghệ</span>
-                                    </h1>
-                                    <p class="tagline">"NOTHING IS ABSOLUTE, NOTHING IS FOREVER, NOTHING FROM NOTHING"</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </section>
-            </div>
-        </div>
-    </div>
+	<div id="Base">
+		<div id="header">
+			<div id="nav">
+				<ul id="first-Subnav" class="first-sub-row">
+					<a href="./Sign up.html" class="btn btn--round btn-secondary btn--xs"
+						title="Đăng ký thành viên">Đăng ký</a>
+					<a href="" class="btn btn--round btn--xs" title="Đăng nhập">Đăng nhập</a>
+				</ul>
+				<div id="second-Subnav" class="second-sub-row">
+					<div><img src="./IMG/Pictures/logo.png" alt="" /> <a href="./Index.html"></a></div>
+					<div class="header-menu">
+						<ul class="navbar-nav">
+							<li class="has_dropdown"><a href="./Index.html">HOME</a></li>
+							<li class="has_dropdown"><a href="./ItemsPage.html">WOMAN</a></li>
+							<li class="has_megamenu"><a href="./ItemsPage.html">MEN</a></li>
+							<li class="has_megamenu"><a href="./ItemsPage.html">KIDS</a></li>
+							<li><a href="">TECHNOLOGIES</a></li>
+							<li><a href="./ItemsPage.html">CLOTHINGS</a></li>
+							<li class="has_megamenu"><a href="./Forrum.html">ABOUT</a></li>
+							<div class="main-search">
+								<div class="search-wrap">
+									<button class="search-wrap__btn" style="position: unset">
+										<i class="fal fa-solid fa-magnifying-glass"></i>
+									</button>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<section class="hero-area bgimage">
+				<div class="bg-image-holder" style="
+							background-image: url(./IMG/Pictures/programmers-programming-motivational-code-text-hd-wallpaper-preview.jpg);
+							opacity: 1;
+						"></div>
+				<div class="hero-content content-above">
+					<div class="content-wrapper">
+						<div class="container">
+							<div class="row">
+								<div class="content_title">
+									<h1>
+										<span class="light">LinkHasDie</span>
+										<span class="bold">I’m Lovin’ It. Save money, live Better $</span>
+									</h1>
+									<p class="tagline">
+										"If I ever let my head down, it will be to admire my shoes"
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="search-area">
+					<div class="container">
+						<div class="body-content-row">
+							<div class="col-sm-12">
+								<div class="search-box">
+									<form action="/search" method="get" target="_blank">
+										<input type="text" name="k" class="text-field"
+											placeholder="Bạn tìm kiếm nội dung gì?" />
+										<div class="search_select select-wrap">
+											<select name="category" id="blah" class="select--field">
+												<option value="">Tất cả</option>
+												<option value="">Sneaker</option>
+												-
+												<option value="">SlideE</option>
+												<option value="">Technologies</option>
+											</select>
+											<!-- <i class="fa-solid fa-chevron-down"></i> -->
+										</div>
+										<button type="submit" class="search-btn btn--lg">
+											Tìm Kiếm
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container">
+			<section class="section-margin-top"></section>
+			<div class="body-content-row">
+				<div class="ads">
+					<h2 class="bold">Đây là Quảng cáo</h2>
+					<!-- <video id="video-back" src="./IMG/Pictures/Casestudy5-Go loi chuong trinh.mp4" autoplay loop></video> -->
+					<!-- <img src="./IMG/Pictures/pexels-pixabay-270557.jpg" alt=""> -->
+				</div>
+			</div>
+		</div>
 
-    <script>
-            let nav = document.getElementById("second-Subnav");
-            let sticky = nav.offsetTop;
-            window.onscroll = function() {sticker()};
-            function sticker() {
-                if(window.pageYOffset >= sticky) {
-                    nav.classList.add("is-sticky");
-                }
-                else {
-                    nav.classList.remove("is-sticky");
-                }
-            }
-    </script>
-    
+		<!-- <section class="section-padding-litle"></section> -->
+		<div class="content-body">
+			<div class="hero-news">
+				<div class="container">
+					<h1 class="padding-b-16px">NEWS</h1>
+					<img style="width: 100%"
+						src="./IMG/Pictures/xbox-and-adidas-unveil-new-sneaker-in-20th-anniversary-collaboration-1.jpg"
+						alt="" />
+					<time>03 NOVEMBER 2021</time>
+					<h1>
+						Xbox and Adidas Unveil New Sneaker in 20th Anniversary Collaboration
+					</h1>
+					<p>
+						Last month we announced an exciting new global partnership with adidas, kicking off with our
+						first-ever console-inspired sneaker collaboration to celebrate the 20th anniversary of Xbox.
+						Today we’re excited to continue that partnership by unveiling the second sneaker – The Xbox 360
+						Forum Mid – the first-ever Xbox-themed sneaker available to purchase for fans in the U.S. and
+						Canada.
+						With a plethora of visual throwbacks and Easter eggs that fans will love, the Xbox 360 Forum Mid
+						is truly designed as a love letter to one of the most iconic consoles in gaming history. Drawing
+						inspiration from the original Xbox 360 console’s colors — white, silver, and green — the
+						incredible details highlighted throughout the sneaker represent a playful celebration and nod to
+						the vibrant history of Xbox.
+					</p>
+					<div class="news-btn">
+						<a href="https://sneakernews.com/">READ MORE</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-ads">
+				<div class="container">
+					<div class="body-content-row">
+						<div class="col-6">
+							<img style="width: 100%; border-radius: 2px; padding-left: 15px"
+								src="./IMG/Pictures/news.jpg" alt="" />
+						</div>
+						<div class="col-6 padding-l-40">
+							<time>21 SEPTEMBER 2022</time>
+							<h1>Jayson Tatum Debuts The Air Jordan 37 Low</h1>
+							<div class="news-btn">
+								<a href="https://sneakernews.com/">READ MORE</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<img style="width: 100%; border-radius: 2px; padding-left: 15px"
+								src="./IMG/Pictures/news2.jpg" alt="" />
+						</div>
+						<div class="col-6 padding-l-40">
+							<time>20 SEPTEMBER 2022</time>
+							<h1>
+								SPEED QUESTIONING INSPIRED BY URUS PERFORMANTE WITH MITJA
+								BORKERT
+							</h1>
+							<div class="news-btn">
+								<a href="https://sneakernews.com/">READ MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <section class="section-padding"> -->
+			<div class="container">
+				<div class="items-container">
+					<div class="title-container">
+						<h2>just dropped</h2>
+						<div class="top-item-btn">
+							<a href="#">SEE MORE</a>
+						</div>
+					</div>
+					<div class="body-content-row">
+						<div class="col-4 content-item">
+							<div class="news-item" style="margin-bottom: 20px">
+								<div class="news-thumbnail">
+									<a href="#" title="Buy">
+										<img src="./IMG/Pictures/Dép 1.jpg" alt="Slide" title="Slide" />
+									</a>
+									<div class="pin-tag"></div>
+								</div>
+								<div class="news-item-content">
+									<a href="#" title="Kick it" class="news-item-title">
+										<h2>Yeeezy Slide "Azure"</h2>
+									</a>
+									<p style="font-size: 14px">Release: 01/02/2023</p>
+									<p style="font-size: 14px" class="sort-list">
+										New Slide, Instock, size: XX, XL...
+									</p>
+								</div>
+								<div class="news-item-meta">
+									<div class="rating">
+										<ul>
+											<li><i class="fa-solid fa-star"></i></li>
+											<li><i class="fa-solid fa-star"></i></li>
+											<li><i class="fa-solid fa-star-half-stroke"></i></li>
+											<li><i class="fa-regular fa-star"></i></li>
+											<li><i class="fa-regular fa-star"></i></li>
+										</ul>
+									</div>
+									<div class="others">
+										<ul>
+											<li>
+												<span class="fa-solid fa-heart scolor"></span><span>0</span>
+											</li>
+											<li>
+												<span class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+											</li>
+											<li>
+												<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 content-item">
+							<div class="news-item" style="margin-bottom: 20px">
+								<div class="news-thumbnail">
+									<a href="#" title="Buy">
+										<img src="./IMG/Pictures/Giày1.jpg" alt="Sneaker" title="Sneaker" />
+									</a>
+									<div class="pin-tag"></div>
+								</div>
+								<div class="news-item-content">
+									<a href="#" title="Kick it" class="news-item-title">
+										<h2>Air Jordan 4 “Pink Riot”</h2>
+									</a>
+									<p style="font-size: 14px">Release: 05/05/2021</p>
+									<p style="font-size: 14px" class="sort-list">
+										New Sneaker, Instock, size: XX, XL...
+									</p>
+								</div>
+								<div class="news-item-meta">
+									<div class="rating">
+										<ul>
+											<li><i class="fa-solid fa-star"></i></li>
+											<li><i class="fa-solid fa-star"></i></li>
+											<li><i class="fa-solid fa-star-half-stroke"></i></li>
+											<li><i class="fa-regular fa-star"></i></li>
+											<li><i class="fa-regular fa-star"></i></li>
+										</ul>
+									</div>
+									<div class="others">
+										<ul>
+											<li>
+												<span class="fa-solid fa-heart scolor"></span><span>0</span>
+											</li>
+											<li>
+												<span class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+											</li>
+											<li>
+												<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 content-item">
+							<div class="news-item" style="margin-bottom: 20px">
+								<div class="news-thumbnail">
+									<a href="#" title="Buy">
+										<img src="./IMG/Pictures/Giày2.jpg" alt="Sneaker" title="Sneaker" />
+									</a>
+									<div class="pin-tag"></div>
+								</div>
+								<div class="news-item-content">
+									<a href="#" title="Kick it" class="news-item-title">
+										<h2>Nike Dunk Low “Reverse UNC”</h2>
+									</a>
+									<p style="font-size: 14px">Release: 12/29/2022</p>
+									<p style="font-size: 14px" class="sort-list">
+										New Sneaker, Instock, size: XX, XL...
+									</p>
+								</div>
+								<div class="news-item-meta">
+									<div class="rating">
+										<ul>
+											<li><i class="fa-solid fa-star"></i></li>
+											<li><i class="fa-solid fa-star"></i></li>
+											<li><i class="fa-solid fa-star-half-stroke"></i></li>
+											<li><i class="fa-regular fa-star"></i></li>
+											<li><i class="fa-regular fa-star"></i></li>
+										</ul>
+									</div>
+									<div class="others">
+										<ul>
+											<li>
+												<span class="fa-solid fa-heart scolor"></span><span>0</span>
+											</li>
+											<li>
+												<span class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+											</li>
+											<li>
+												<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="items-container" style="padding-top: 50px ">
+						<div class="title-container">
+							<h2>Latest News</h2>
+							<div class="top-item-btn">
+								<a href="#">SEE MORE</a>
+							</div>
+						</div>
+						<div class="body-content-row">
+							<div class="col-4 content-item">
+								<div class="news-item" style="margin-bottom: 20px">
+									<div class="news-thumbnail">
+										<a href="#" title="Buy">
+											<img src="./IMG/Pictures/Giày4.jpg" alt="Sneaker" title="Sneaker" />
+										</a>
+										<div class="pin-tag"></div>
+									</div>
+									<div class="news-item-content">
+										<a href="#" title="Kick it" class="news-item-title">
+											<h2>Air Jordan 1 High 85 “Black/White”</h2>
+										</a>
+										<p style="font-size: 14px">Release: 06/23/2018</p>
+										<p style="font-size: 14px" class="sort-list">
+											New Sneaker, Instock, size: XX, XL...
+										</p>
+									</div>
+									<div class="news-item-meta">
+										<div class="rating">
+											<ul>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star-half-stroke"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+											</ul>
+										</div>
+										<div class="others">
+											<ul>
+												<li>
+													<span class="fa-solid fa-heart scolor"></span><span>0</span>
+												</li>
+												<li>
+													<span
+														class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+												</li>
+												<li>
+													<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 content-item">
+								<div class="news-item" style="margin-bottom: 20px">
+									<div class="news-thumbnail">
+										<a href="#" title="Buy">
+											<img src="./IMG/Pictures/Giày5.jpg" alt="Sneaker" title="Sneaker" />
+										</a>
+										<div class="pin-tag"></div>
+									</div>
+									<div class="news-item-content">
+										<a href="#" title="Kick it" class="news-item-title">
+											<h2>Nike Dunk Low “UCLA”</h2>
+										</a>
+										<p style="font-size: 14px">Release: 06/23/2018</p>
+										<p style="font-size: 14px" class="sort-list">
+											New Sneaker, Instock, size: XX, XL...
+										</p>
+									</div>
+									<div class="news-item-meta">
+										<div class="rating">
+											<ul>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star-half-stroke"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+											</ul>
+										</div>
+										<div class="others">
+											<ul>
+												<li>
+													<span class="fa-solid fa-heart scolor"></span><span>0</span>
+												</li>
+												<li>
+													<span
+														class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+												</li>
+												<li>
+													<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 content-item">
+								<div class="news-item" style="margin-bottom: 20px">
+									<div class="news-thumbnail">
+										<a href="#" title="Buy">
+											<img src="./IMG/Pictures/Giày3.jpg" alt="Sneaker" title="Sneaker" />
+										</a>
+										<div class="pin-tag"></div>
+									</div>
+									<div class="news-item-content">
+										<a href="#" title="Kick it" class="news-item-title">
+											<h2>Air Jordan 1 Low “UNC”</h2>
+										</a>
+										<p style="font-size: 14px">Release: 06/23/2018</p>
+										<p style="font-size: 14px" class="sort-list">
+											New Sneaker, Instock, size: XX, XL...
+										</p>
+									</div>
+									<div class="news-item-meta">
+										<div class="rating">
+											<ul>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star-half-stroke"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+											</ul>
+										</div>
+										<div class="others">
+											<ul>
+												<li>
+													<span class="fa-solid fa-heart scolor"></span><span>0</span>
+												</li>
+												<li>
+													<span
+														class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+												</li>
+												<li>
+													<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-content-row">
+							<div class="col-4 content-item">
+								<div class="news-item" style="margin-bottom: 20px">
+									<div class="news-thumbnail">
+										<a href="#" title="Buy">
+											<img src="./IMG/Pictures/Giày6.jpg" alt="Sneaker" title="Sneaker" />
+										</a>
+										<div class="pin-tag"></div>
+									</div>
+									<div class="news-item-content">
+										<a href="#" title="Kick it" class="news-item-title">
+											<h2>Nike Dunk Low “Fruity Pebbles”</h2>
+										</a>
+										<p style="font-size: 14px">Release: 06/23/2018</p>
+										<p style="font-size: 14px" class="sort-list">
+											New Sneaker, Instock, size: XX, XL...
+										</p>
+									</div>
+									<div class="news-item-meta">
+										<div class="rating">
+											<ul>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star-half-stroke"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+											</ul>
+										</div>
+										<div class="others">
+											<ul>
+												<li>
+													<span class="fa-solid fa-heart scolor"></span><span>0</span>
+												</li>
+												<li>
+													<span
+														class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+												</li>
+												<li>
+													<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 content-item">
+								<div class="news-item" style="margin-bottom: 20px">
+									<div class="news-thumbnail">
+										<a href="#" title="Buy">
+											<img src="./IMG/Pictures/Giày7.jpg" alt="Sneaker" title="Sneaker" />
+										</a>
+										<div class="pin-tag"></div>
+									</div>
+									<div class="news-item-content">
+										<a href="#" title="Kick it" class="news-item-title">
+											<h2>Nike Dunk Low “Velcro Tongue”</h2>
+										</a>
+										<p style="font-size: 14px">Release: 06/23/2018</p>
+										<p style="font-size: 14px" class="sort-list">
+											New Sneaker, Instock, size: XX, XL...
+										</p>
+									</div>
+									<div class="news-item-meta">
+										<div class="rating">
+											<ul>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star-half-stroke"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+											</ul>
+										</div>
+										<div class="others">
+											<ul>
+												<li>
+													<span class="fa-solid fa-heart scolor"></span><span>0</span>
+												</li>
+												<li>
+													<span
+														class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+												</li>
+												<li>
+													<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 content-item">
+								<div class="news-item" style="margin-bottom: 20px">
+									<div class="news-thumbnail">
+										<a href="#" title="Buy">
+											<img src="./IMG/Pictures/Giày8.jpg" alt="Sneaker" title="Sneaker" />
+										</a>
+										<div class="pin-tag"></div>
+									</div>
+									<div class="news-item-content">
+										<a href="#" title="Kick it" class="news-item-title">
+											<h2>Air Jordan 4 “Country Blue"</h2>
+										</a>
+										<p style="font-size: 14px">Release: 06/23/2018</p>
+										<p style="font-size: 14px" class="sort-list">
+											New Sneaker, Instock, size: XX, XL...
+										</p>
+									</div>
+									<div class="news-item-meta">
+										<div class="rating">
+											<ul>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star-half-stroke"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+											</ul>
+										</div>
+										<div class="others">
+											<ul>
+												<li>
+													<span class="fa-solid fa-heart scolor"></span><span>0</span>
+												</li>
+												<li>
+													<span
+														class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+												</li>
+												<li>
+													<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-content-row">
+							<div class="col-4 content-item">
+								<div class="news-item" style="margin-bottom: 20px">
+									<div class="news-thumbnail">
+										<a href="#" title="Buy">
+											<img src="./IMG/Pictures/Giày9.jpg" alt="Sneaker" title="Sneaker" />
+										</a>
+										<div class="pin-tag"></div>
+									</div>
+									<div class="news-item-content">
+										<a href="#" title="Kick it" class="news-item-title">
+											<h2>Air Jordan 4 “Thunder”</h2>
+										</a>
+										<p style="font-size: 14px">Release: 06/23/2018</p>
+										<p style="font-size: 14px" class="sort-list">
+											New Sneaker, Instock, size: XX, XL...
+										</p>
+									</div>
+									<div class="news-item-meta">
+										<div class="rating">
+											<ul>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star-half-stroke"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+											</ul>
+										</div>
+										<div class="others">
+											<ul>
+												<li>
+													<span class="fa-solid fa-heart scolor"></span><span>0</span>
+												</li>
+												<li>
+													<span
+														class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+												</li>
+												<li>
+													<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 content-item">
+								<div class="news-item" style="margin-bottom: 20px">
+									<div class="news-thumbnail">
+										<a href="#" title="Buy">
+											<img src="./IMG/Pictures/giày10.jpg" alt="Sneaker" title="Sneaker" />
+										</a>
+										<div class="pin-tag"></div>
+									</div>
+									<div class="news-item-content">
+										<a href="#" title="Kick it" class="news-item-title">
+											<h2>Yeezy 350 "Pirate Black"</h2>
+										</a>
+										<p style="font-size: 14px">Release: 06/23/2018</p>
+										<p style="font-size: 14px" class="sort-list">
+											New Sneaker, Instock, size: XX, XL...
+										</p>
+									</div>
+									<div class="news-item-meta">
+										<div class="rating">
+											<ul>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star-half-stroke"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+											</ul>
+										</div>
+										<div class="others">
+											<ul>
+												<li>
+													<span class="fa-solid fa-heart scolor"></span><span>0</span>
+												</li>
+												<li>
+													<span
+														class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+												</li>
+												<li>
+													<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-4 content-item">
+								<div class="news-item" style="margin-bottom: 20px">
+									<div class="news-thumbnail">
+										<a href="#" title="Buy">
+											<img src="./IMG/Pictures/Giày11.jpg" alt="Sneaker" title="Sneaker" />
+										</a>
+										<div class="pin-tag"></div>
+									</div>
+									<div class="news-item-content">
+										<a href="#" title="Kick it" class="news-item-title">
+											<h2>AIR JORDAN 1 HIGH "TRUE BLUE"</h2>
+										</a>
+										<p style="font-size: 14px">Release: 06/23/2018</p>
+										<p style="font-size: 14px" class="sort-list">
+											New Sneaker, Instock, size: XX, XL...
+										</p>
+									</div>
+									<div class="news-item-meta">
+										<div class="rating">
+											<ul>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star"></i></li>
+												<li><i class="fa-solid fa-star-half-stroke"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+												<li><i class="fa-regular fa-star"></i></li>
+											</ul>
+										</div>
+										<div class="others">
+											<ul>
+												<li>
+													<span class="fa-solid fa-heart scolor"></span><span>0</span>
+												</li>
+												<li>
+													<span
+														class="fa-sharp fa-solid fa-gears mcolor3"></span><span>10</span>
+												</li>
+												<li>
+													<span class="fa-solid fa-person pcolor"></span><span>45980</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="bigger-btn">
+                            <a href="#">MORE!</a>
+                        </div> -->
+					<div class="body-content-row">
+						<div class="col-4">
+							<div class="pagination-area">
+								<nav class="navigation pagination" role="navigation">
+									<div class="nav-links">
+										<a href="#" class="page-numbers current">1</a>
+										<a href="#" class="page-numbers">2</a>
+										<a href="#" class="page-numbers">3</a>
+										<a href="#" class="page-numbers">4</a>
+										<a href="#" class="page-numbers"><i
+												class="fa-sharp fa-solid fa-right-to-bracket"></i></a>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="body-content-row">
+						<div class="ads">
+							<h2 class="bold">Đây là Quảng cáo</h2>
+							<!-- <img src="./IMG/Pictures/pexels-pixabay-270557.jpg" alt=""> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <section class="section-padding"></section> -->
+		<footer class="footer-area">
+			<div class="footer-big section-padding">
+				<div class="container">
+					<div class="body-content-row">
+						<div class="col-4">
+							<div class="info-footer" style="max-width: 80%">
+								<div class="info-logo">
+									<a href="/" title="LinkHasDie Footer Logo">
+										<img src="./IMG/Pictures/logo.png" alt="" title="LinkHasDie Footer Logo"
+											class="img-fluid" width="399" height="50" />
+									</a>
+								</div>
+								<p class="info-text">
+									Cộng đồng chia sẻ nội dung, kiến thức hữu ích về công nghệ
+									và giải trí.
+								</p>
+							</div>
+							<div class="info-footer">
+								<h4 class="footer-widgett-title text--white">Liên hệ</h4>
+								<ul class="info-contact">
+									<li title="Phone Number">
+										<i class="fa-solid fa-phone info-icon"></i>
+										<i class="info">+84678330989</i>
+									</li>
+									<li title="Email">
+										<i class="fa-solid fa-envelope info-icon"></i>
+										<i class="info">Trannguyendanhuy2904@gmail.comn</i>
+									</li>
+									<li title="Github">
+										<i class="fa-brands fa-github info-icon"></i>
+										<i class="info">Ginnart</i>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="info-footer" style="margin-bottom: 40px">
+								<h4 class="footer-widget-title text-white" style="line-height: unset !important">
+									Fanpage
+								</h4>
+								<h5 class="footer-widget-title text-white" style="
+												line-height: unset !important;
+												font-size: 15px;
+												margin-bottom: 20px;
+											">
+									Join us on facebook
+								</h5>
+							</div>
+							<div class="info-footer" style="margin-top: 50px"></div>
+						</div>
+						<div class="col-4">
+							<div class="info-footer">
+								<div class="footer-row">
+									<div class="col-4">
+										<div id="div-pageview-realtime" class="text-white"
+											style="font-size: 28px; font-weight: 600">
+											5345234
+										</div>
+										<p>Tổng lượt xem</p>
+									</div>
+									<div class="col-4">
+										<div id="div-pageview-realtime" class="text-white"
+											style="font-size: 28px; font-weight: 600">
+											628
+										</div>
+										<p>Online</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="newsletter"><h4 class="footer-widget-title text-white">Mạng xã hội</h4>
+								<p>
+									Theo dõi các mạng xã hội để có được những thông tin: World, News Sneaker...</p>
+								<div class="social social-color-fill">
+									<ul>
+										<li>
+											<a href="#"></a><i class="fa-brands fa-facebook"></i>
+										</li>
+										<li>
+											<a href="#"></a><i class="fa-brands fa-instagram"></i>
+										</li>
+										<li>
+											<a href="#"></a><i class="fa-brands fa-twitter"></i>
+										</li>
+										<li>
+											<a href=""></a><i class="fa-brands fa-linkedin"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<button onclick="scrollToTop()" class="go-top">
+			<i class="fa-solid fa-chevron-up"></i>
+		</button>
+	</div>
+
+	<section class="section-padding"></section>
+	</div>
+
+	<script>
+		// sticky second top header nav
+		let nav = document.getElementById("second-Subnav");
+		let sticky = nav.offsetTop;
+		window.onscroll = function () {
+			sticker();
+		};
+		function sticker() {
+			if (window.pageYOffset >= sticky) {
+				nav.classList.add("is-sticky");
+			} else {
+				nav.classList.remove("is-sticky");
+			}
+		}
+		// scroll to top funcion
+		function scrollToTop() {
+			// window.scrollTo(0, 0);
+			// window.scroll({
+			// top: 0,
+			// left: 0,
+			// behavior: 'smooth'
+			// });
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		}
+	</script>
 </body>
+
 </html>

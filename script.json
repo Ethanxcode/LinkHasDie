@@ -1,0 +1,24 @@
+	// sticky second top header nav
+
+		let nav = document.getElementById("second-Subnav");
+		let sticky = nav.offsetTop;
+		window.onscroll = function () {
+			sticker();
+		};
+		function sticker() {
+			if (window.pageYOffset >= sticky) {
+				nav.classList.add("is-sticky");
+			} else {
+				nav.classList.remove("is-sticky");
+			}
+		}
+		// scroll to top funcion
+		function scrollToTop() {
+			// window.scrollTo(0, 0);
+			// window.scroll({
+			// top: 0,
+			// left: 0,
+			// behavior: 'smooth'
+			// });
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		}
