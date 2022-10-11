@@ -287,6 +287,7 @@ input {
 	opacity: 0.07;
 	visibility: visible;
 }
+
 .btn:hover {
 	/* color: #212529; */
 	text-decoration: none;
@@ -298,11 +299,13 @@ input {
 	font-size: 15px;
 	margin: 0px 8px;
 }
+
 .btn--news-xs {
 	line-height: 36px;
 	padding: 6px 20px;
 	font-size: 15px;
 }
+
 .btn--news-xs > a {
 	line-height: 36px;
 	/* padding: 4px 16px; */
@@ -392,6 +395,7 @@ button {
 .search-wrap {
 	position: relative;
 }
+
 .search-wrap input {
 	line-height: 45px;
 	height: 45px;
@@ -401,10 +405,12 @@ button {
 	border-radius: 23px;
 	padding-right: 50px;
 }
+
 .sidebar-blog .card-search .search-wrap input,
 .support-sidebar .search-wrap input {
 	width: 100%;
 }
+
 .search-wrap .search-wrap__btn {
 	position: absolute;
 	line-height: 45px;
@@ -701,6 +707,7 @@ button {
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
+
 .section-padding2 {
 	padding: 30px 0 60px;
 }
@@ -727,6 +734,7 @@ button {
 .offset-lg-3 {
 	margin-left: 25%;
 }
+
 .col-lg-4 {
 	/* -ms-flex: 0 0 33.333333%; */
 	flex: 0 0 33.333333%;
@@ -1275,6 +1283,7 @@ h4 {
 	z-index: -1;
 	animation: rgb 6s linear infinite;
 }
+
 .rgb2::after {
 	content: "";
 	background: linear-gradient(
@@ -1299,6 +1308,7 @@ h4 {
 	z-index: -1;
 	animation: rgb 6s linear infinite;
 }
+
 .rgb3::after {
 	content: "";
 	background: linear-gradient(
@@ -1329,9 +1339,11 @@ h4 {
 	0% {
 		background-position: 0% 50%;
 	}
+
 	50% {
 		background-position: 100% 50%;
 	}
+
 	100% {
 		background-position: 0% 50%;
 	}
@@ -1737,6 +1749,7 @@ select {
 	text-align: left;
 	display: inline-block;
 }
+
 label,
 .form-group p.label {
 	font-weight: 500;
@@ -1747,6 +1760,7 @@ label,
 	color: #000;
 	font-weight: 600 !important;
 }
+
 .custom_checkbox label .label_text,
 .custom_checkbox .form-group p.label .label_text,
 .form-group .custom_checkbox p.label .label_text {
@@ -1762,6 +1776,7 @@ label span,
 	font-weight: 400;
 	font-size: 15px;
 }
+
 label {
 	cursor: default;
 }
@@ -1769,12 +1784,14 @@ label {
 .custom_checkbox input[type="checkbox"]:checked + label .shadow_checkbox {
 	border: transparent;
 }
+
 .custom_checkbox
 	input[type="checkbox"]:checked
 	+ label
 	.shadow_checkbox:before {
 	visibility: visible;
 }
+
 .custom_checkbox input[type="checkbox"] {
 	display: none;
 }
@@ -1783,6 +1800,7 @@ label {
 	position: relative;
 	margin-top: 10px;
 }
+
 button,
 input {
 	overflow: visible;
@@ -1878,6 +1896,7 @@ strong {
 	/* -webkit-border-radius: 200px; */
 	border-radius: 200px;
 }
+
 .thread-sort-area .sort-option ul li a:hover {
 	color: #fff;
 	background: #f9af5e;
@@ -1927,10 +1946,12 @@ strong {
 .support-thread-list .support-thread--single:after {
 	clear: both;
 }
+
 .support-thread-list .support-thread--single .support-thread-info {
 	float: left;
 	width: calc(100% - 190px);
 }
+
 .support-thread-list
 	.support-thread--single
 	.support-thread-info
@@ -1956,6 +1977,7 @@ strong {
 	.user {
 	display: inline-block;
 }
+
 .support-thread-list
 	.support-thread--single
 	.support-thread-info
@@ -2023,14 +2045,17 @@ strong {
 .i-amphtml-layout-size-defined {
 	overflow: hidden !important;
 }
+
 .i-amphtml-layout-fixed,
 [layout="fixed"][width][height]:not(.i-amphtml-layout-fixed) {
 	display: inline-block;
 	position: relative;
 }
+
 .i-amphtml-element {
 	display: inline-block;
 }
+
 article,
 aside,
 figcaption,
@@ -2088,6 +2113,7 @@ section {
 	display: block;
 	margin-bottom: 0;
 }
+
 .product-sidebar .card-category ul li a.item-count,
 .support-sidebar .card-category ul li a.item-count,
 .faq-sidebar .card-category ul li a .item-count,
@@ -2099,6 +2125,7 @@ section {
 .sidebar-blog .card-category ul li a .item-count {
 	float: right;
 }
+
 /* .support-sidebar .card-forum-categories ul li a .item-count {
 	float: right;
 } */
@@ -2192,6 +2219,7 @@ section {
 	font-size: 10px;
 	margin-right: 10px;
 }
+
 .support-sidebar .card-top-discussion .card-content li,
 .faq-sidebar .card-top-discussion .card-content li,
 .affliate-rule-module .card-top-discussion .card-content li,
