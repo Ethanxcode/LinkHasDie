@@ -81,7 +81,7 @@ v.middle {
 :root {
 	--blue: #0674ec;
 	--menu-a: #000;
-	-breadcrumb-area: linear-gradient(to left, #7347c1, #0674ec);
+	-breadcrumb-area: linear-gradient(to left, #951d26, #f9af5e);
 }
 
 ::-webkit-scrollbar {
@@ -99,7 +99,7 @@ v.middle {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(to left, #7347c1, #0674ec);
+	background: linear-gradient(to left, #951d26, #f9af5e);
 	border: 0 transparent;
 	border-radius: 31px;
 }
@@ -177,6 +177,7 @@ img {
 	z-index: 0;
 	/* -webkit-transition: opacity 0.3s linear; */
 	opacity: 0;
+	border-radius: 0 0 20% 20% / 0 0 16% 16%;
 }
 
 #Base {
@@ -189,7 +190,7 @@ img {
 }
 
 .btn-secondary {
-	background: #7347c1 !important;
+	background: #ea404b !important;
 }
 
 .container {
@@ -263,7 +264,7 @@ input {
 .btn {
 	text-decoration: none;
 	/* background-color: #377ac1; */
-	background-color: #0674ec;
+	background-color: #dc542e;
 	color: #fff;
 	margin: 0;
 	font-weight: 500;
@@ -277,7 +278,7 @@ input {
 }
 
 .btn:hover {
-	background-color: #0056b3;
+	background-color: #ba742a;
 	cursor: pointer;
 	color: #fff;
 }
@@ -292,10 +293,26 @@ input {
 }
 
 .btn--xs {
-	line-height: 36px;
+	line-height: 42px;
 	padding: 0 19px;
 	font-size: 15px;
 	margin: 0px 8px;
+}
+.btn--news-xs {
+	line-height: 36px;
+	padding: 6px 20px;
+	font-size: 15px;
+}
+.btn--news-xs > a {
+	line-height: 36px;
+	/* padding: 4px 16px; */
+	font-size: 20px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.news-btn {
+	margin-top: 16px;
 }
 
 .btn-form--xs {
@@ -396,7 +413,7 @@ button {
 	border: 0;
 	width: 45px;
 	text-align: center;
-	background: #0674ec;
+	background: #f9af5e;
 	color: #fff;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;
@@ -507,10 +524,11 @@ button {
 	height: 100%;
 	width: 100%;
 	content: "";
-	background: linear-gradient(to left, #7347c1, #0030de);
+	background: linear-gradient(to left, #951d26, #f9af5e);
 	top: 0;
 	left: 0;
 	opacity: 0.8;
+	border-radius: 0 0 20% 20% / 0 0 16% 16%;
 }
 
 .bgimage:before {
@@ -650,7 +668,7 @@ button {
 }
 
 .search-btn {
-	background: #0674ec;
+	background: #ba742a;
 	color: #fff;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
@@ -788,6 +806,7 @@ h6 {
 	margin: 16px;
 	transition: 0.2s;
 	position: relative;
+	z-index: 1;
 }
 
 .content-item:hover {
@@ -854,7 +873,7 @@ h6 {
 }
 
 .top-item-btn > a:hover {
-	background-color: #0674ec;
+	background-color: #ba742a;
 	color: white;
 }
 
@@ -953,18 +972,8 @@ h6 {
 	text-align: center;
 }
 
-.news-btn > a {
-	padding: 4px 16px;
-	font-size: 20px;
-	color: #202020;
-	margin-top: 16px;
-	font-weight: 400;
-	border-radius: 5px;
-	border: 1px solid;
-}
-
 .news-btn > a:hover {
-	background-color: #0674ec;
+	background-color: #ba742a;
 	color: white;
 }
 
@@ -1141,7 +1150,7 @@ h4 {
 }
 
 .pagination-are .page-numbers:hover {
-	background: #0674ec;
+	background: #ba742a;
 	color: #fff;
 }
 
@@ -1161,7 +1170,7 @@ h4 {
 
 .pagination-area .page-numbers:hover,
 .pagination-area .page-numbers.current {
-	background: #0674ec;
+	background: #ba742a;
 	color: #fff;
 }
 
@@ -1170,7 +1179,7 @@ h4 {
 	line-height: 40px;
 	cursor: pointer;
 	width: 40px;
-	background: #0674ec;
+	background: #ba742a;
 	color: #fff;
 	position: fixed;
 	-webkit-box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
@@ -1241,6 +1250,109 @@ h4 {
 	box-shadow: 0 2px 4px rgb(108 111 115 / 10%);
 	transition: 0.3s ease;
 }
+
+.rgb::after {
+	content: "";
+	background: linear-gradient(
+			45deg,
+			#ff0000 0%,
+			#ff9a00 10%,
+			#d0de21 20%,
+			#4fdc4a 30%,
+			#3fdad8 40%,
+			#2fc9e2 50%,
+			#1c7fee 60%,
+			#5f15f2 70%,
+			#ba0cf8 80%,
+			#fb07d9 90%,
+			#ff0000 100%
+		)
+		repeat 0% 0% / 300% 100%;
+	position: absolute;
+	inset: -1px;
+	border-radius: 2px;
+	filter: blur(6px);
+	z-index: -1;
+	animation: rgb 6s linear infinite;
+}
+.rgb2::after {
+	content: "";
+	background: linear-gradient(
+			45deg,
+			#2fc9e2 0%,
+			#ba0cf8 10%,
+			#d0de21 20%,
+			#5f15f2 30%,
+			#3fdad8 40%,
+			#ff0000 50%,
+			#1c7fee 60%,
+			#4fdc4a 70%,
+			#ff9a00 80%,
+			#fb07d9 90%,
+			#ff0000 100%
+		)
+		repeat 0% 0% / 300% 100%;
+	position: absolute;
+	inset: -1px;
+	border-radius: 2px;
+	filter: blur(6px);
+	z-index: -1;
+	animation: rgb 6s linear infinite;
+}
+.rgb3::after {
+	content: "";
+	background: linear-gradient(
+			45deg,
+			#1c7fee 0%,
+
+			#fb07d9 10%,
+			#ff9a00 20%,
+			#4fdc4a 30%,
+			#d0de21 40%,
+			#ff0000 50%,
+			#5f15f2 60%,
+			#ba0cf8 70%,
+			#2fc9e2 80%,
+			#ff0000 90%,
+			#3fdad8 100%
+		)
+		repeat 0% 0% / 500% 200%;
+	position: absolute;
+	inset: -1px;
+	border-radius: 2px;
+	filter: blur(6px);
+	z-index: -1;
+	animation: rgb 6s linear infinite;
+}
+
+@keyframes rgb {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* --angle: 0deg;
+	border: 1px solid;
+	border-image: linear-gradient(var(--angle), #12c2e9, #c471ed, #f64f59) 1;
+	animation: 5s rotate linear infinite;
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+} */
 
 .news-thumbnail {
 	position: relative;
@@ -1360,7 +1472,7 @@ a {
 }
 
 .pcolor {
-	color: #0674ec;
+	color: #ba742a;
 }
 
 /* SIGN UP CSS PAGE */
@@ -1410,7 +1522,7 @@ a {
 	/* background: -webkit-gradient(linear, right top, left top, from(#7347c1), to(#0674ec));
     background: -webkit-linear-gradient(right, #7347c1, #0674ec);
     background: -o-linear-gradient(right, #7347c1, #0674ec); */
-	background: linear-gradient(to left, #7347c1, #0674ec);
+	background: linear-gradient(to left, #951d26, #f9af5e);
 	opacity: 0.91;
 	top: 0;
 	left: 0;
@@ -1602,7 +1714,7 @@ select {
 } */
 
 .login-assist p a {
-	color: #0674ec;
+	color: #f9af5e;
 }
 
 .login-area p,
@@ -1704,7 +1816,7 @@ strong {
 	color: #fff;
 	line-height: 18px;
 	/* font-family: Font Awesome\5 Pro, sans-serif; */
-	background: #0674ec;
+	background: #f9af5e;
 	/* -webkit-border-radius: 2px; */
 	border-radius: 2px;
 }
@@ -1762,13 +1874,13 @@ strong {
 
 .thread-sort-area .sort-option ul li.active a {
 	color: #fff;
-	background: #0674ec;
+	background: #f9af5e;
 	/* -webkit-border-radius: 200px; */
 	border-radius: 200px;
 }
 .thread-sort-area .sort-option ul li a:hover {
 	color: #fff;
-	background: #0674ec;
+	background: #f9af5e;
 	/* -webkit-border-radius: 200px; */
 	border-radius: 200px;
 }
@@ -1868,7 +1980,7 @@ strong {
 	/* -webkit-border-radius: 0.25rem; */
 	border-radius: 0.25rem;
 	padding: 0 12px;
-	color: #0674ec;
+	color: #f9af5e;
 	margin-left: 9px;
 	font-size: 12px;
 	font-weight: 600;
@@ -1933,7 +2045,7 @@ section {
 }
 
 .support-sidebar .login-promot {
-	background: #0674ec;
+	background: #f9af5e;
 	color: #fff;
 	margin-bottom: 30px;
 	font-weight: 500;
@@ -2109,4 +2221,7 @@ section {
 	display: inline-block;
 	vertical-align: top;
 }
-/* Git Commited */
+
+.fb-comments {
+	color: #fff;
+}

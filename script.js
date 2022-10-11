@@ -38,3 +38,27 @@
     //     await new Promise(res => setTimeout(res, 5000)); //await function with 1000 ms by steps
     // }
 }
+
+// Flashing title
+let activeAlert = false;
+const title = "LinkHasDie";
+const msg = "(47) New Messages";
+const changeTitle = setInterval(() => {
+	if(activeAlert == false) {
+		document.title = title;
+		activeAlert = !activeAlert;
+	}
+	else {
+		document.title = msg;
+		activeAlert = !activeAlert;
+	}
+},1000);
+
+
+// const whiteColor = document.querySelector("._50f7");
+// console.log(whiteColor);
+
+// const changeTitle = setInterval(() => {
+// 	document.title = activeAlert ? title : msg;
+// 	activeAlert != activeAlert;
+// },1000);
